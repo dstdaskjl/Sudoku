@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="edu.psu.sxa5362.sudoku">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".Landing"
+            tools:ignore="LockedOrientationActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Home"
+            tools:ignore="LockedOrientationActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Sudoku"
+            tools:ignore="LockedOrientationActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SudokuResume"
+            tools:ignore="LockedOrientationActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Challenge"
+            tools:ignore="LockedOrientationActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Ranking"
+            tools:ignore="LockedOrientationActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Setting"
+            tools:ignore="LockedOrientationActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".DifficultyPopup"
+            tools:ignore="LockedOrientationActivity"
+            android:screenOrientation="portrait"/>
+
+        <service android:name=".BGM"
+            android:exported="false"/>
+        <service android:name=".SoundEffect"
+            android:exported="false"/>
+
+    </application>
+
+</manifest>
